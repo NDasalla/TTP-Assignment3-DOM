@@ -19,7 +19,7 @@ const submitButton = document.getElementById("submit");
 const posters = [
   {
     image: "./images/forest.jpg",
-    title: "Not One Path",
+    title: "No One Path",
     quote: `"The key to success fits many doors."`,
   },
   {
