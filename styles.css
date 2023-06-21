@@ -1,4 +1,5 @@
 body {
+  width: 800px;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,9 +18,14 @@ header {
   text-align: center;
 }
 
+.centerContent {
+  max-width: 1000px;
+  margin: auto;
+}
+
 #poster-image {
-  width: 300px;
-  height: 300px;
+  width: 672;
+  height: 378px;
   margin-bottom: 10px;
 }
 
