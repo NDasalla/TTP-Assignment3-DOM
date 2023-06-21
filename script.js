@@ -20,27 +20,29 @@ const posters = [
   {
     image: "./images/forest.jpg",
     title: "No One Path",
-    quote: `"The key to success fits many doors."`,
+    quote: "The key to success fits many doors.",
   },
   {
     image: "./images/malenia.jpg",
     title: "Keep Going",
-    quote: `"The people who have never attempted it think you are insane. The ones that have know you are."`,
+    quote:
+      "The people who have never attempted it think you are insane. The ones that have know you are.",
   },
   {
     image: "./images/eldenRing.jpg",
     title: "Success",
-    quote: `"Don't measure it by how far you have to go, but by how far you've come."`,
+    quote:
+      "Don't measure it by how far you have to go, but by how far you've come.",
   },
   {
     image: "./images/samurai.jpg",
     title: "Life and Death",
-    quote: `"Fear, not death, but never having lived."`,
+    quote: "Fear, not death, but never having lived.",
   },
   {
     image: "./images/america1.jpg",
     title: "Freedom",
-    quote: `"It isn't free. It costs a buck-o-five."`,
+    quote: "It isn't free. It costs a buck-o-five.",
   },
 
   // Add more poster objects as needed
@@ -62,10 +64,11 @@ function generateRandomPoster() {
   // Math.floor(Math.random() * (max - min) ) + min; [min, max)
   let ranNum = Math.floor(Math.random() * (posters.length - 0)) + 0;
   // console.log(ranNum);
-
-  posterImage.setAttribute("src", posters[ranNum]["image"]);
-  posterTitle.textContent = posters[ranNum]["title"];
-  posterQuote.textContent = posters[ranNum]["quote"];
+  updatePoster(
+    posters[ranNum].image,
+    posters[ranNum].title,
+    posters[ranNum].quote
+  );
 }
 
 // Function to generate a custom poster
